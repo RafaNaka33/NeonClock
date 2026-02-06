@@ -15,7 +15,7 @@ body {
     radial-gradient(circle at center, rgba(0,229,255,0.12), transparent 45%),
     #020617;
   display: flex;
-  background-image: url('https://wallpaperaccess.com/full/1116756.jpg');
+  background-image: url('https://wallpapers.com/images/hd/4k-black-hole-neon-ad3na6i2911401im.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ body {
 /* BARRA NEON */
 .progress {
   fill: none;
-  stroke: #8B5CF6;
+  stroke: #000000;
   stroke-width: 12;
   stroke-linecap: round;
   filter:
@@ -72,14 +72,14 @@ body {
   align-items: center;
 
   font-size: 55px;
-  color: #15ff00;
+  color: #000000;
 
   text-shadow:
     0 0 5px #ffffff,
     0 0 10px #ffffff,
-    0 0 20px #15ff00,
-    0 0 40px #15ff00,
-    0 0 80px #ffffff;
+    0 0 20px #7C3AED,
+    0 0 40px #7C3AED,
+    0 0 80px #7C3AED;
 
   animation: pulse 2.5s ease-in-out infinite;
 }
