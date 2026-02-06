@@ -1,0 +1,91 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+svg{
+    background-color: transparent !important;
+}
+/* FUNDO / WALLPAPER */
+body {
+  height: 100vh;
+  background:
+    radial-gradient(circle at center, rgba(139,92,246,0.15), transparent 60%),
+    radial-gradient(circle at center, rgba(0,229,255,0.12), transparent 45%),
+    #020617;
+  display: flex;
+  background-image: url('https://wallpaperaccess.com/full/1116756.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  justify-content: center;
+  align-items: center;
+  font-family: 'Audiowide', sans-serif;
+}
+
+.container {
+    background: transparent;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 80%; /* Deixa container redondo */
+  overflow: visible; /* Garante que sombra/neon não seja cortada */
+}
+
+
+/* SVG */
+.ring {
+    background: transparent;
+    display: block;
+    overflow: visible;
+  transform: rotate(-90deg);
+}
+
+/* FUNDO DO CÍRCULO */
+.bg {
+  fill: none;
+  stroke: #1e293b;
+  stroke-width: 12;
+}
+
+/* BARRA NEON */
+.progress {
+  fill: none;
+  stroke: #8B5CF6;
+  stroke-width: 12;
+  stroke-linecap: round;
+  filter:
+    drop-shadow(0 0 6px #8B5CF6)
+    drop-shadow(0 0 14px #7C3AED)
+    drop-shadow(0 0 30px #7C3AED);
+  transition: stroke-dashoffset 0.2s linear;
+}
+
+/* TEXTO DO RELÓGIO */
+.clock {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 55px;
+  color: #15ff00;
+
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #15ff00,
+    0 0 40px #15ff00,
+    0 0 80px #ffffff;
+
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+/* ANIMAÇÃO DE BRILHO */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
